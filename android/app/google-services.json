@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770643811150",
+    "project_id": "cuidapet-mobile-mvk",
+    "storage_bucket": "cuidapet-mobile-mvk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770643811150:android:b1188dc5b584e6bc65dc1f",
+        "android_client_info": {
+          "package_name": "vision.maverick.cuidapet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770643811150-cgnj9ipbbjlbsif64ekk5s655aidcdtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfCQS9PKoFrJgzg8Zj89sSiyNabDMpHRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770643811150-cgnj9ipbbjlbsif64ekk5s655aidcdtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
