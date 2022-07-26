@@ -29,7 +29,9 @@ class UserServiceImpl implements UserService {
 
       await _userRepository.register(email, password);
       final userCredential = await firebaseAuth.createUserWithEmailAndPassword(
-          email: email, password: password);
+        email: email,
+        password: password,
+      );
 
       await userCredential.user?.sendEmailVerification();
     } on FirebaseException catch (e, s) {

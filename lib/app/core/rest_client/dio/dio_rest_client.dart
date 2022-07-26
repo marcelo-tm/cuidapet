@@ -57,7 +57,7 @@ class DioRestClient implements RestClient {
       {Map<String, dynamic>? queryParams,
       Map<String, dynamic>? headers}) async {
     try {
-      final response = await _dio.get(path,
+      final response = await _dio.get<T>(path,
           queryParameters: queryParams,
           options: Options(
             headers: headers,
@@ -75,7 +75,7 @@ class DioRestClient implements RestClient {
       Map<String, dynamic>? queryParams,
       Map<String, dynamic>? headers}) async {
     try {
-      final response = await _dio.patch(path,
+      final response = await _dio.patch<T>(path,
           data: data,
           queryParameters: queryParams,
           options: Options(
@@ -94,7 +94,7 @@ class DioRestClient implements RestClient {
       Map<String, dynamic>? queryParams,
       Map<String, dynamic>? headers}) async {
     try {
-      final response = await _dio.post(path,
+      final response = await _dio.post<T>(path,
           data: data,
           queryParameters: queryParams,
           options: Options(
@@ -113,7 +113,7 @@ class DioRestClient implements RestClient {
       Map<String, dynamic>? queryParams,
       Map<String, dynamic>? headers}) async {
     try {
-      final response = await _dio.put(path,
+      final response = await _dio.put<T>(path,
           data: data,
           queryParameters: queryParams,
           options: Options(
@@ -133,7 +133,7 @@ class DioRestClient implements RestClient {
       Map<String, dynamic>? queryParams,
       Map<String, dynamic>? headers}) async {
     try {
-      final response = await _dio.request(path,
+      final response = await _dio.request<T>(path,
           data: data,
           queryParameters: queryParams,
           options: Options(
